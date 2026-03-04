@@ -221,3 +221,66 @@ h1{font-size:44px;line-height:1.05;margin:0 0 12px}
   margin:0 0 14px 0;
   filter: drop-shadow(0 18px 40px rgba(0,0,0,.45));
 }
+/* HERO BACKGROUND GARAGE STYLE */
+
+.hero-door{
+  position:relative;
+  background:
+    linear-gradient(rgba(0,0,0,.65), rgba(0,0,0,.55)),
+    url("https://images.unsplash.com/photo-1599696848652-f0ff23bc911f?q=80&w=2000");
+  background-size:cover;
+  background-position:center;
+  border-bottom:1px solid var(--line);
+}
+
+/* LOGO HERO */
+
+.hero-logo{
+  width:min(520px, 100%);
+  height:auto;
+  display:block;
+  margin-bottom:20px;
+  filter:
+    drop-shadow(0 20px 45px rgba(0,0,0,.6))
+    drop-shadow(0 0 25px rgba(255,200,0,.25));
+}
+
+/* HEADER LOGO */
+
+.logo-mark{
+  width:42px;
+  height:42px;
+  object-fit:contain;
+  border-radius:10px;
+  background: rgba(255,255,255,.04);
+  border:1px solid var(--line);
+  padding:6px;
+}
+
+/* PHONE BUTTON */
+
+.phone{
+  border:1px solid rgba(255,200,0,.4);
+  background:linear-gradient(135deg,#ffd24a,#ffb300);
+  color:#111;
+  padding:8px 12px;
+  border-radius:10px;
+  font-weight:800;
+  box-shadow:0 6px 18px rgba(255,200,0,.35);
+}
+
+.phone:hover{
+  transform:translateY(-1px);
+  box-shadow:0 10px 24px rgba(255,200,0,.5);
+}
+
+/* MOBILE PHONE BUTTON BIGGER */
+
+@media (max-width:700px){
+
+.phone{
+  font-size:16px;
+  padding:10px 14px;
+}
+
+}
