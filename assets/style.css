@@ -39,6 +39,15 @@ a{color:inherit}
 
 .brand{display:flex;align-items:center;gap:12px;text-decoration:none}
 .brand-mark{
+  .logo-mark{
+  width:42px;
+  height:42px;
+  object-fit:contain;
+  border-radius:12px;
+  background: rgba(255,255,255,.04);
+  border:1px solid var(--line);
+  padding:6px;
+}
   width:42px;height:42px;border-radius:12px;
   display:grid;place-items:center;
   background: linear-gradient(135deg, rgba(255,210,74,.95), rgba(125,211,252,.85));
