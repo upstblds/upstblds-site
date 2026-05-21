@@ -101,7 +101,7 @@
     }
 
     .hero {
-      min-height: 100vh;
+      min-height: auto;
       position: relative;
       display: grid;
       grid-template-columns: 1.05fr 0.95fr;
@@ -265,7 +265,7 @@
 }
 
     .section {
-      min-height: 100vh;
+      min-height: auto;
       padding: 110px 7vw;
       position: relative;
     }
@@ -393,7 +393,7 @@
     }
 
     .contact {
-      min-height: 80vh;
+      min-height: auto;
       display: grid;
       place-items: center;
       text-align: center;
@@ -661,7 +661,50 @@ section {
     right: -90px;
     opacity: 0.07;
   }
-}   
+}
+    /* EXTRA MOBILE/TABLET FIXES */
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Before / After section responsive */
+@media (max-width: 768px) {
+
+  div[style*="grid-template-columns:1fr 1fr"] {
+    grid-template-columns: 1fr !important;
+  }
+
+  .hero-actions {
+    width: 100%;
+  }
+
+  .hero-actions .btn {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .stamp {
+    transform: rotate(-4deg);
+  }
+
+  .door-card img,
+  .tile img,
+  .service-card img {
+    object-fit: cover;
+  }
+
+  .hero-copy div[style*="Licensed & Insured"] {
+    font-size: 13px !important;
+    line-height: 1.6;
+  }
+
+  .contact p {
+    font-size: 1rem;
+  }
+}
   </style>
 </head>
 <body>
@@ -681,7 +724,6 @@ section {
   </header>
 
   <main>
-    <img class="site-bg-logo" src="assets/images/accesspro-logo-trans.png" alt="">
     <section class="hero">
       <img class="hero-logo-mark" src="accesspro-logo-trans.png" alt="AccessPro Solutions logo mark" />
       <div class="hero-copy">
@@ -722,8 +764,19 @@ section {
 
   <h2 class="section-title">Before & After Transformations</h2>
 
-  <div style="display:grid; grid-template-columns:1fr 1fr; gap:30px; margin-top:30px;">
+  <div class="before-after-grid">
+.before-after-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  margin-top: 30px;
+}
 
+@media (max-width: 768px) {
+  .before-after-grid {
+    grid-template-columns: 1fr;
+  }
+}
     <!-- BEFORE -->
     <div style="background:#111; padding:20px; border:4px solid #f5f1e7;">
       <h3 style="margin-bottom:15px; color:#f6c400;">Before</h3>
