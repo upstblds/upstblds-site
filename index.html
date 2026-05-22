@@ -478,9 +478,18 @@
 }
 
 .hero-visual {
-  z-index: 2;
+  position: relative;
+  z-index: 8;
+}
+.door-card {
+  position: absolute;
+  z-index: 9;
 }
 
+.door-card img {
+  opacity: 1 !important;
+  filter: saturate(1) contrast(1.05);
+}
 @media (max-width: 980px) {
   .hero-logo-mark {
     right: -40px;
